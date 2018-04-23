@@ -1,0 +1,36 @@
+.flex{
+    display: flex;
+}
+
+.userList-user{
+    padding-left: 20px
+}
+
+ul{
+    list-style: none;
+}
+
+ul>li{
+    padding-top: 10px;
+}
+
+.square{
+    border: 1px solid black;
+    box-shadow: 3px 3px 10px #b0b0b0;
+    width: 150px;
+    height: 150px;
+    margin-left: 10px;
+    font-size: 90px;
+    text-align: center;
+    margin-top: 15px;
+  }
+  
+  .game-row{
+    /* display: flex; */
+    margin-left: 10px;
+    /* margin-top: 0px */
+  }
+  
+  .square:hover{
+    background-color: #ffffb3;
+  }

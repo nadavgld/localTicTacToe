@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Tic-Tac-Toe</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>Tic-Tac-Toe</h1>
+    <div class="row">
+      <div class="col-md-12 flex cont" id="loginContainer">
+
+        <div class="col-md-4">
+          <input type="text" name="" id="logUser" class="form-control" placeholder="Username">
+        </div>
+
+        <div class="col-md-4">
+          <button class="btn btn-info" id="loginBtn">Enter</button>
+        </div>
+
+      </div>
+
+      <div class="col-md-12 flex cont" id="gameContainer">
+
+          <div class="col-md-6">
+            <h3>Welcome <span id="welcomeUser"></span></h3>
+            <p> Current Online Users: <span id="onlineAmount"></span></p>
+            <ul id="userList"></ul>
+          </div>
+
+          <div class="col-md-6">
+            <h3>Games</h3>
+            <p> Games Invitation: <span id="onlineAmount"></span></p>
+            <ul id="invList"></ul>
+          </div>
+  
+        </div>
+
+        <div class="col-md-12 cont" id="game">
+          <div class="row">
+            <h3 id="gameTitle"></h3>
+          </div>
+            
+          <div class="row">
+            <div class="game-row">
+                <div class="square" id="s1"></div>
+                <div class="square" id="s2"></div>
+                <div class="square" id="s3"></div>
+              </div>
+              <br>
+              <div class="game-row">
+                <div class="square" id="s4"></div>
+                <div class="square" id="s5"></div>
+                <div class="square" id="s6"></div>
+              </div>
+              <br>
+              <div class="game-row">
+                <div class="square" id="s7"></div>
+                <div class="square" id="s8"></div>
+                <div class="square" id="s9"></div>
+              </div>
+            </div>
+            
+            <div class="row">
+              Current Turn: &nbsp; <span id="turnText"></span>
+            </div>
+          </div>
+    </div>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+    crossorigin="anonymous"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
